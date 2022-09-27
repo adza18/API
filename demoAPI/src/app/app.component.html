@@ -1,0 +1,14 @@
+<h1>Hello</h1>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<button (click)="showSuccess()">Success</button>
+<button (click)="showError()">Error</button>
+<button (click)="showInfo()">Info</button>
+<button (click)="showWarning()">Warning</button>
+<div *ngFor = "let d of details">
+  {{d.id}}
+  {{d.strain}}
+  {{d.cannabinoid}}
+</div>
+<ngx-ui-loader></ngx-ui-loader>
